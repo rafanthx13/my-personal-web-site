@@ -1,0 +1,29 @@
+{
+  "name": "rafanthx13.github.io",
+  "version": "1.0.0",
+  "description": "+ English Version\r + Organizar todas as pastas /assets\r + Organizar CSS em um único arquivo bem organizado\r + Melhorar Tailwind\r + Ver o modo mobile",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "create:tailwind": "tailwind build -i ./assets/tailwind/base-tailwind.css -o ./assets/css/full-tailwind.css",
+    "build:tailwind": "npx tailwindcss build -i ./assets/tailwind/base-tailwind.css -o ./assets/css/clean-tailwind.css --minify NODE_ENV=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafanthx13/rafanthx13.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafanthx13/rafanthx13.github.io/issues"
+  },
+  "homepage": "https://github.com/rafanthx13/rafanthx13.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  }
+}

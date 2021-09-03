@@ -8,7 +8,7 @@ var data = {
       link: 'https://price-log-app.herokuapp.com/',
       tags: ['WebPage', 'Vue.JS'],
       img_src: 'logPriceApp.png',
-      desc: 'Aplicação Web para registro de produtos, seu preço e sua observar sua evolução no tempo',
+      desc: 'Aplicação Web para acompanhamento e evolução de preços de produtos locais',
     },
     {
       name: 'LogPriceServer',
@@ -16,7 +16,7 @@ var data = {
       link: 'https://library-my-api.herokuapp.com/swagger-ui.html',
       tags: ['Node', 'API REST', 'Express', 'BDD Jest'],
       img_src: 'logPriceServer.png',
-      desc: 'API REST para ser consumida por LogPriceApp'
+      desc: 'API REST da aplicação LogPriceApp'
     },
     {
       name: 'Portifolio de DataScience',
@@ -24,7 +24,7 @@ var data = {
       link: 'https://github.com/rafanthx13/ds-portifolio',
       tags: ['DataScience', 'Python', 'Kaggle', 'MachineLearning', 'EDA'],
       img_src: 'ds-portifolio.png',
-      desc: 'Snippets de Data Science e Projetos da Kaggle '
+      desc: 'Projetos de DataScience da Kaggle. Snippests de código e de gráficos '
     },
     {
       name: 'Avaliador de Comentários',
@@ -32,7 +32,7 @@ var data = {
       link: 'https://rafanthx13.github.io/comments-rating-app/',
       tags: ['WebPage', 'Angular.JS'],
       img_src: 'comments-rating-app.png',
-      desc: 'Avaliar comentários como positivos ou negativos através de um modelo de Inteligência Artificial'
+      desc: 'Avalia comentários como positivos ou negativos através de um modelo de Inteligência Artificial'
     },
     {
       name: 'Servidor do Avaliador de Coment.',
@@ -40,7 +40,7 @@ var data = {
       link: '',
       tags: ['Python', 'Flask', 'Pytorch', 'RNN-LSTM'],
       img_src: 'comments-rating-server.png',
-      desc: 'Servidor flask para prover o acesso ao modelo de Machine Learning para classificar comentários'
+      desc: 'Servidor Flask para prover o acesso ao modelo de Machine Learning para classificar comentários'
     },
     {
       name: 'Gerador de Index de MarkDown',
@@ -56,7 +56,7 @@ var data = {
       link: 'https://library-my-api.herokuapp.com/swagger-ui.html',
       tags: ['Java', 'API REST', 'Spring', 'TDD: JUnit'],
       img_src: 'swagger-price-server.png',
-      desc: 'API REST simples para um sistema de biblioteca'
+      desc: 'API REST em simples em Java para um sistema de biblioteca'
     },
     {
       name: 'Movue It',
@@ -72,7 +72,7 @@ var data = {
       link: 'https://western-freedom.netlify.app/',
       tags: ['WebPage', 'Vue'],
       img_src: 'western-freedom.png',
-      desc: 'Aplicação para atrelar Notícias à Pessoas'
+      desc: 'Aplicação para registrar Notícias à Pessoas'
     },
     {
       name: 'Archive Person API',
@@ -88,7 +88,7 @@ var data = {
       link: 'https://rafanthx13.github.io/web-page-training/',
       img_src: 'web-pages-project.png',
       tags: ['WebPage', 'Design', 'CSS'],
-      desc: 'Reprodução de Páginas Web. Treinamento de CSS e Design'
+      desc: 'Reprodução de Páginas Web. Treinamento de CSS e WebDesign'
     }
   ]
 };

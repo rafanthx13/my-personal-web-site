@@ -67,4 +67,15 @@ Hamburgues
 + EN PAGE [last]
 
 
-## Erros do site checekr pro
+## Como fazer Deploy
+
+Hostinger > Hospedagem > IMportar Site 
+
+Compha como ZIP toda a psta exceto node_modules e outro zip se tiver
+
+## Diacs de otimizaçÂo
+
+1. Imanges npg devem ser comprimeidas e convertidas para webp
+2. Toda imagem deve ter width e heigh na sua tag html, mesmo que seja modificada com css
+3. toda imagem deve ter alt
+4. jsquey usesempre o ultimo mais seguro

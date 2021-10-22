@@ -85,11 +85,12 @@
 }
 
 .br:before {
-  background-image: url(https://www.countryflags.io/br/flat/32.png);
+  background-image: url('../images/languages-icons/br.png'); /*  url('../images/languages-icons/en.png'); */
+/* url(https://www.countryflags.io/br/flat/32.png);  */
 }
 
 .en:before {
-    background-image: url(https://www.countryflags.io/us/flat/32.png);
+    background-image: url('../images/languages-icons/en.png');
 }
 
 .nav-mobile.br:before {

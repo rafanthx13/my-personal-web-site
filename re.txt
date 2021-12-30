@@ -1,0 +1,49 @@
+<div class="p-4 w-30cents font-roboto">
+          <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60"><img width="400"
+              height="200" alt="Projetos de Web Pages" src="./assets/images/projects/git-collection.png"
+              loading="lazy" class="object-cover object-center w-full lg:h-48 md:h-36">
+            <div class="p-6"><span class="flex flex-wrap mb-1 text-xs font-medium tracking-widest text-gray-400 "><span>
+                  WebPage &nbsp;
+                </span><span>
+                  React &nbsp;
+                </span><span>
+                  TypeScript &nbsp;
+                </span></span>
+              <div class="flex flex-wrap">
+                <h3 class="mb-3 text-lg font-medium text-gray-900 ">Git Collection</h3> <a
+                  href="https://github.com/rafanthx13/react-type-git-collection"><img
+                    src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20"
+                    class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a
+                  href="https://react-type-git-collection.netlify.app/"><img src="assets/images/icons/link-ext.svg"
+                    loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
+              </div>
+              <p class="mb-3 leading-relaxed">Aplicaçâo para consulta de repositórios Git</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 w-30cents font-roboto">
+          <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60"><img width="400"
+              height="200" alt="Projetos de Web Pages" src="./assets/images/projects/dev-news.png"
+              loading="lazy" class="object-cover object-center w-full lg:h-48 md:h-36">
+            <div class="p-6"><span class="flex flex-wrap mb-1 text-xs font-medium tracking-widest text-gray-400 "><span>
+                  WebPage &nbsp;
+                </span><span>
+                  React &nbsp;
+                </span><span>
+                  Next.JS &nbsp;
+                </span><span>
+                  TypeScript &nbsp;
+                </span></span>
+              <div class="flex flex-wrap">
+                <h3 class="mb-3 text-lg font-medium text-gray-900 ">Dev News</h3> <a
+                  href="https://github.com/rafanthx13/next-type-dev-news"><img
+                    src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20"
+                    class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a
+                  href="https://next-type-dev-news.vercel.app/"><img src="assets/images/icons/link-ext.svg"
+                    loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
+              </div>
+              <p class="mb-3 leading-relaxed">Blog de Notícias</p>
+            </div>
+          </div>
+        </div>

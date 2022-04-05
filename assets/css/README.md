@@ -2,6 +2,14 @@
 
 Esse projeto tem como base o **Tailwind**, usando npm e a junçâo e otimização usando **Gulp**
 
+## Fazer Update no CSS, de DEV para PROD
+
+Enquanto estiver desenvolvendo
+ative full-tailwin (vai improtr todas asc classes do arquivo grande)
+ative my-style (e programe direto nele)
+
+Depois, apos feito faça os 3 scripts do package.json e desetive os 2 anteriores
+
 ## 1. Arquivos
 
 my-style.css = CSS pessoal

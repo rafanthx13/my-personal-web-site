@@ -79,16 +79,19 @@
   <!--============ CSS SCRIPTS ============-->
 
   <!-- TAIL-WIND DEV -->
-  <link rel="stylesheet" href="assets/css/tailwind/full-tailwind.css">
+  <!-- <link rel="stylesheet" href="assets/css/tailwind/full-tailwind.css">
+  <link rel="stylesheet" href="assets/css/my-style.css">
+  -->
   <!-- TAIL-WIND PROD -->
   <!-- <link rel="stylesheet" href="assets/css/tailwind/clean-tailwind.css"> -->
 
   <link rel="stylesheet" href="assets/css/ultimate-style.min.css">
 
-  <!-- <link rel="stylesheet" href="assets/css/my-style.css"> -->
   <!-- <link rel="stylesheet" href="assets/css/time-line.css">
   <link rel="stylesheet" href="assets/css/language-selector.css">
   <link rel="stylesheet" href="assets/css/hamburguer.css"> -->
+
+  <!-- style  -->
 
 </head>
 
@@ -202,10 +205,21 @@
     <!-- HERO -->
     <section id="home">
       <div class="container flex flex-col items-center justify-center px-5 py-2 mx-auto">
+
+        <!-- MAIN IMAGE -->
         <img id="my-photo" class="object-cover object-center w-4/6 mb-10 rounded-full lg:w-1/4 md:w-2/6" alt="hero"
-          src="assets/images/my_foto.jpg" alt="profile-photo" width="250" height="250"/>
+          src="assets/images/my_foto_3.png" alt="profile-photo" width="250" height="250"/>
         <div class="w-full text-center lg:w-2/3">
           <h1 class="mb-4 text-5xl font-extrabold text-gray-900 sm:text-5xl">Rafael Morais de Assis</h1>
+          <!-- CV -->
+          <a target="_blank" href="./assets/curriculum/Rafael-Morais-de-Assis-Curriculo-PT-BR.pdf">
+            <span class="hero-button font-extrabold sm:text-1xl ">CV</span>
+          </a>
+          <!-- GO TO CONTATO -->
+          <a href="#contact">
+            <span class="hero-button font-extrabold sm:text-1xl ">Contato</span>
+          </a>
+
         </div>
       </div>
     </section>
@@ -233,18 +247,18 @@
 
     <div class="flex flex-col justify-center text-center mx-15" style="width: 80%;margin: auto;text-align: left;">
 
-      <p class="mb-8 text-xl leading-relaxed text-center text-green-700 font-roboto gre">
+      <p class="mb-4 text-xl leading-relaxed text-center text-green-700 font-roboto gre">
         #OpenToWork
       </p>
-      
-      <p class="mb-8 leading-relaxed text-center font-roboto">
-        04/04/2022 = O que estou trabalhando\estudando: 
+
+      <p class="mb-4 leading-relaxed text-center font-roboto">
+        04/04/2022 = O que estou trabalhando/estudando no momento
       </p>
 
-      <p class="mb-8 leading-relaxed text-center font-roboto">
-        Dash + Plotly; Figma; Power BI; Melhorar Currículo
+      <p class="mb-4 leading-relaxed text-center font-roboto">
+        Dash + Plotly; Figma; Power BI; Melhorar Portifólio
       </p>
-      
+
     </div>
 
   </section>
@@ -260,19 +274,26 @@
     </div>
 
     <div class="flex flex-col justify-center text-center mx-15" style="width: 80%;margin: auto;text-align: left;">
-      <!-- <p class="mb-8 leading-relaxed font-roboto"> -->
-        <p class="mb-8 leading-relaxed font-roboto">Oi eu sou Rafael Assis, graduando em Ciência da Computação na UFU. Desde criança tenho me interessado na área de tecnologia, tanto que meu ensino médio foi atrelado ao técnico em informática, onde tive meu primeiro contato com algoritmos. Na faculdade pude me aprofundar na computação, e por meio do estágio de cerca de 2 anos, me tornar um desenvolvedor full-stack.</p>
 
-        <p class="mb-8 leading-relaxed font-roboto">A Partir do meu contato com a Iniciação Científica me apaixonei pela área de Ciência de Dados. Essa experiência resultou na participação da confecção de um artigo científico:<br>
+      <p class="mb-8 leading-relaxed font-roboto">
+        Oi eu sou Rafael Assis, graduando em Ciência da Computação na UFU. Desde criança tenho me interessado na área de tecnologia,
+        tanto que meu ensino médio foi atrelado ao técnico em informática, onde tive meu primeiro contato com algoritmos.
+        Na faculdade pude me aprofundar na computação, e por meio do estágio de cerca de 2 anos, me tornar um desenvolvedor full-stack.
+      </p>
+
+      <p class="mb-8 leading-relaxed font-roboto">
+        A Partir do meu contato com a Iniciação Científica me apaixonei pela área de Ciência de Dados.
+        Essa experiência resultou na participação da confecção de um artigo científico:
         <a href="https://repositorio.usp.br/item/002968832" style="color: blue;"><i>
           Feature-based time series classification for service request opening prediction in the telecom industry
         </i></a>
-        </p>
+      </p>
 
-        <p class="mb-8 leading-relaxed font-roboto">No decorrer da graduação pude trabalhar com várias tecnologias, nas quais escolhi me especializar mais em: Vue.JS para Front-End, Node.JS para Back-End e Python para Ciência de dados.
-        </p>
-
-        <p class="mb-8 leading-relaxed font-roboto">Recentemente tenho buscado me especializar na área de Engenharia de Dados e Cloud com AWS</p>
+      <p class="mb-8 leading-relaxed font-roboto">
+        No decorrer da graduação pude trabalhar com várias tecnologias,
+        nas quais escolhi me especializar mais em: Vue.JS para Front-End,
+        Node.JS para Back-End e Python para Ciência de dados.
+      </p>
 
       </p>
     </div>
@@ -405,7 +426,10 @@
           <div class="cd-timeline-content">
             <div class="content-box">
               <div class="date">2011-2014</div>
-              <div class="name">Ensino Médio - IFBA - Campus Eunápolis</div>
+              <div class="name justify-between" style="display: flex !important">
+                Ensino Médio - IFBA - Campus Eunápolis
+                <img src="./assets/images/icons/ifba.jpg" width="50" height="40" alt="IFBAImg">
+              </div>
               <div class="category">Eunápolis - BA</div>
               <p>
                 Ensino médio integrado ao técnico em informática
@@ -420,7 +444,10 @@
           <div class="cd-timeline-content">
             <div class="content-box">
               <div class="date">2015-2022</div>
-              <div class="name">UFU - Universidade Federal de Uberlândia</div>
+              <div class="name justify-between" style="display: flex !important">
+                UFU - Universidade Federal de Uberlândia
+                <img src="./assets/images/icons/ufu.png" width="40" height="40" alt="UFUImg">
+              </div>
               <div class="category">Uberlândia - MG</div>
               <p>
                 Bacharelando em Ciência da Computação
@@ -452,14 +479,17 @@
           <div class="cd-timeline-content">
             <div class="content-box">
               <div class="date">2017-2019</div>
-              <div class="name">Neppo</div>
+              <div class="name justify-between" style="display: flex !important">
+                Neppo
+                <img src="./assets/images/icons/neppo.png" width="80" height="80" alt="NeppoImg">
+              </div>
               <div class="category">Uberlândia - MG</div>
 
-                <p>Estagiário‍ do‍ Programa‍da‍ Neppo‍ atuando‍ em‍ 2 projetos:</p><br>
+                <p>Estagiário‍ do‍ Programa‍da‍ Neppo‍ atuando‍ em‍ dois projetos:</p><br>
 
-                <p>‍‍‍‍projeto1‍:‍ PHP‍ como‍ BackEnd‍ e Angular.JS‍ como‍ FrontEnd.‍ Incluiu‍ também‍ o‍ uso‍ da‍ ferramenta‍ Pentaho‍ para‍ fazer‍ ETL de‍ banco‍ de‍ dados.</p><br>
+                <p>‍‍‍‍Projeto 1:‍ PHP‍ como‍ BackEnd‍ e Angular.JS‍ como‍ FrontEnd.‍ Incluiu‍ também‍ o‍ uso‍ da‍ ferramenta‍ Pentaho‍ para‍ fazer‍ ETL de‍ banco‍ de‍ dados.</p><br>
 
-                <p>‍‍‍‍projeto2:‍ Java‍ (Spring‍ Framework)‍ como‍ BackEnd‍ e‍ Vue.js‍ como‍ FrontEnd.</p><br>
+                <p>‍‍‍‍Projeto 2:‍ Java‍ (Spring‍ Framework)‍ como‍ BackEnd‍ e‍ Vue.js‍ como‍ FrontEnd.</p><br>
 
                 <p>Em‍ ambos‍ usando:‍ HMTL,‍ CSS,‍ Banco‍ de‍ Dados‍ MySQL,‍ metodologia‍ Scrum‍ e‍ Git.</p><br>
 
@@ -473,14 +503,219 @@
 
   <!--============ PROJECTS ============-->
   <section class="text-gray-600 body-font" id="projects">
+
     <div class="container px-5 py-12 mx-auto">
+
         <div class="mb-20 text-center">
             <h2 class="mb-4 text-gray-900">Projetos</h2>
             <div class="divider-h2">
                 <div></div>
             </div>
         </div>
+
+        <!--===== BI EDA PROJECTS =====-->
+
+        <!--
+          <div class="mb-12 text-center">
+            <h3 class="mb-3 text-gray-900">BI e EDA</h3>
+            <div class="divider-h3">
+                <div></div>
+            </div>
+          </div>
+          <p class="leading-relaxed text-center">Projetos de Business Intelligence (BI) e Análise exploratória de dados (EDA)</p>
+        -->
+
+        <!--===== WEB DESGINER PROJECTS =====-->
+
+        <!--
+          <div class="mb-12 text-center">
+            <h3 class="mb-3 text-gray-900">BI e EDA</h2>
+            <div class="divider-h3">
+                <div></div>
+            </div>
+          </div>
+          <p class="leading-relaxed text-center">Páginas Web Reais</p>
+      -->
+
+        <!--===== DATA SCIENCE PROJECTS =====-->
+
+        <div class="mb-12 text-center">
+          <h3 class="mb-3 text-gray-900">Data Science</h2>
+          <div class="divider-h3">
+              <div></div>
+          </div>
+        </div>
+
+        <p class="leading-relaxed text-center">Projetos de Data Science e Inteligência Artificial</p>
+
         <div class="flex flex-wrap md:justify-around">
+
+          <!-- DATA WORLD -->
+          <div class="p-4 w-30cents font-roboto">
+            <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60">
+
+              <div class="container-img-link">
+                <a href="https://github.com/rafanthx13/data-world">
+                  <img width="400" height="200"
+                    class="object-cover object-center w-full lg:h-48 md:h-36 hover-img-link"
+                    alt="Portifolio de DataScience" src="./assets/images/projects/ds-portifolio.webp" loading="lazy"
+                  >
+                  <div class="middle">
+                    <div class="text-hover-img">GitHub</div>
+                  </div>
+                </a>
+              </div>
+
+                <div class="p-6"><span class="flex flex-wrap mb-1 text-xs font-medium tracking-widest text-gray-400 "><span>
+                            DataScience &nbsp;
+                        </span><span>
+                            Python &nbsp;
+                        </span><span>
+                            Kaggle &nbsp;
+                        </span><span>
+                            MachineLearning &nbsp;
+                        </span><span>
+                            EDA &nbsp;
+                        </span></span>
+                    <div class="flex flex-wrap">
+                        <h3 class="mb-3 text-lg font-medium text-gray-900 ">Portifolio de DataScience</h3> <a href="https://github.com/rafanthx13/ds-portifolio"><img src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20" class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a href="https://github.com/rafanthx13/ds-portifolio"><img src="assets/images/icons/link-ext.svg" loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
+                    </div>
+                    <p class="mb-3 leading-relaxed">Projetos de DataScience da Kaggle. Snippets de códigos, procedimentos e gráficos</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- BARKION -->
+        <div class="p-4 w-30cents font-roboto">
+          <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60">
+
+            <div class="container-img-link">
+              <a href="https://github.com/rafanthx13/barkion">
+                <img width="400" height="200"
+                  class="object-cover object-center w-full lg:h-48 md:h-36 hover-img-link"
+                  alt="Barkion" src="./assets/images/projects/barkion.png" loading="lazy"
+                >
+                <div class="middle">
+                  <div class="text-hover-img">GitHub</div>
+                </div>
+              </a>
+            </div>
+
+            <div class="p-6"><span class="flex flex-wrap mb-1 text-xs font-medium tracking-widest text-gray-400 "><span>
+                        DataScience &nbsp;
+                    </span><span>
+                        Python &nbsp;
+                    </span><span>
+                        EDA &nbsp;
+                    </span></span>
+                    <span>
+                      Pypi Lib &nbsp;
+                  </span>
+                <div class="flex flex-wrap">
+                    <h3 class="mb-3 text-lg font-medium text-gray-900 ">Barkion</h3>
+                    <a href="https://github.com/rafanthx13/barkion">
+                      <img src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon"
+                      width="20" height="20" class="w-5 pt-1 mx-2 hover:opacity-20">
+                    </a>
+                      <a href="https://github.com/rafanthx13/barkion">
+                      <img src="assets/images/icons/link-ext.svg" loading="lazy" alt="linkExtern" width="20"
+                      height="20" class="w-5 pt-1 hover:opacity-20">
+                    </a>
+                </div>
+                <p class="mb-3 leading-relaxed">Lib com códigos padrões de DS e EDA</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- RATING COMMENTS APP -->
+        <div class="p-4 w-30cents font-roboto">
+          <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60">
+
+            <a href="https://rafanthx13.github.io/comments-rating-app/">
+            <img width="400" height="200" alt="Avaliador de Comentários" src="./assets/images/projects/comments-rating-app.webp" loading="lazy" class="object-cover object-center w-full lg:h-48 md:h-36">
+            </a>
+
+              <div class="p-6">
+                <span class="flex flex-wrap mb-1 text-xs font-medium tracking-widest text-gray-400 ">
+                  <span>
+                          WebPage &nbsp;
+                      </span>
+                      <span>
+                          Angular.JS &nbsp;
+                      </span>
+                  </span>
+                  <div class="flex flex-wrap">
+                      <h3 class="mb-3 text-lg font-medium text-gray-900 ">Avaliador de Comentários</h3> <a href="https://rafanthx13.github.io/comments-rating-app/"><img src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20" class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a href="https://rafanthx13.github.io/comments-rating-app/"><img src="assets/images/icons/link-ext.svg" loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
+                  </div>
+                  <p class="mb-3 leading-relaxed">Avalia comentários como positivos ou negativos através de um modelo de Inteligência Artificial</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="p-4 w-30cents font-roboto">
+        <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60"><img width="400"
+            height="200" alt="Projetos de Web Pages" src="./assets/images/projects/data-eng-video-recomender.png"
+            loading="lazy" class="object-cover object-center w-full lg:h-48 md:h-36">
+          <div class="p-6"><span class="flex flex-wrap mb-1 text-xs font-medium tracking-widest text-gray-400 "><span>
+                WebPage &nbsp;
+              </span><span>
+                MachineLearning &nbsp;
+              </span><span>
+                WebScrap &nbsp;
+              </span></span>
+            <div class="flex flex-wrap">
+              <h3 class="mb-3 text-lg font-medium text-gray-900 ">DataEng Video Recomender</h3> <a
+                href="https://github.com/rafanthx13/data-eng-youtube-recomender"><img
+                  src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20"
+                  class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a
+                href="https://data-eng-web-project.netlify.app/video-recommender"><img src="assets/images/icons/link-ext.svg"
+                  loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
+            </div>
+            <p class="mb-3 leading-relaxed">Recomendador de vídeos sobre engenharia de dados</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4 w-30cents font-roboto">
+        <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60">
+
+          <a href="https://github.com/rafanthx13/comments-rating-server">
+          <img width="400" height="200" alt="Servidor do Avaliador de Coment." src="./assets/images/projects/comments-rating-server.webp" loading="lazy" class="object-cover object-center w-full lg:h-48 md:h-36">
+          </a>
+
+            <div class="p-6"><span class="flex flex-wrap mb-1 text-xs font-medium tracking-widest text-gray-400 "><span>
+                        Python &nbsp;
+                    </span><span>
+                        Flask &nbsp;
+                    </span><span>
+                        Pytorch &nbsp;
+                    </span><span>
+                        RNN-LSTM &nbsp;
+                    </span></span>
+                <div class="flex flex-wrap">
+                    <h3 class="mb-3 text-lg font-medium text-gray-900 ">Server do Avaliador de Coment.</h3> <a href="https://github.com/rafanthx13/comments-rating-server"><img src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20" class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a href="https://rafanthx13.github.io/comments-rating-app/"><img src="assets/images/icons/link-ext.svg" loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
+                </div>
+                <p class="mb-3 leading-relaxed">Servidor Flask para prover o acesso ao modelo de Machine Learning para classificar comentários</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+        <!--===== WEB DEV PROJECTS =====-->
+
+        <div class="mb-12 text-center">
+          <h3 class="mb-3 text-gray-900">Web Dev</h2>
+          <div class="divider-h3">
+              <div></div>
+          </div>
+        </div>
+
+        <p class="leading-relaxed text-center">Projetos Web: Full-stack: back-end/front-end</p>
+
+        <div class="flex flex-wrap md:justify-around">
+
             <div class="p-4 w-30cents font-roboto">
                 <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60">
 
@@ -500,6 +735,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="p-4 w-30cents font-roboto">
                 <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60">
 
@@ -523,73 +759,7 @@
                     </div>
                 </div>
             </div>
-            <div class="p-4 w-30cents font-roboto">
-                <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60">
 
-                  <a href="https://github.com/rafanthx13/ds-portifolio">
-                  <img width="400" height="200" alt="Portifolio de DataScience" src="./assets/images/projects/ds-portifolio.webp" loading="lazy" class="object-cover object-center w-full lg:h-48 md:h-36">
-                  </a>
-
-                    <div class="p-6"><span class="flex flex-wrap mb-1 text-xs font-medium tracking-widest text-gray-400 "><span>
-                                DataScience &nbsp;
-                            </span><span>
-                                Python &nbsp;
-                            </span><span>
-                                Kaggle &nbsp;
-                            </span><span>
-                                MachineLearning &nbsp;
-                            </span><span>
-                                EDA &nbsp;
-                            </span></span>
-                        <div class="flex flex-wrap">
-                            <h3 class="mb-3 text-lg font-medium text-gray-900 ">Portifolio de DataScience</h3> <a href="https://github.com/rafanthx13/ds-portifolio"><img src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20" class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a href="https://github.com/rafanthx13/ds-portifolio"><img src="assets/images/icons/link-ext.svg" loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
-                        </div>
-                        <p class="mb-3 leading-relaxed">Projetos de DataScience da Kaggle. Snippets de códigos de proecedimentos e de gráficos </p>
-                    </div>
-                </div>
-            </div>
-            <div class="p-4 w-30cents font-roboto">
-                <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60">
-
-                  <a href="https://rafanthx13.github.io/comments-rating-app/">
-                  <img width="400" height="200" alt="Avaliador de Comentários" src="./assets/images/projects/comments-rating-app.webp" loading="lazy" class="object-cover object-center w-full lg:h-48 md:h-36">
-                  </a>
-
-                    <div class="p-6"><span class="flex flex-wrap mb-1 text-xs font-medium tracking-widest text-gray-400 "><span>
-                                WebPage &nbsp;
-                            </span><span>
-                                Angular.JS &nbsp;
-                            </span></span>
-                        <div class="flex flex-wrap">
-                            <h3 class="mb-3 text-lg font-medium text-gray-900 ">Avaliador de Comentários</h3> <a href="https://rafanthx13.github.io/comments-rating-app/"><img src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20" class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a href="https://rafanthx13.github.io/comments-rating-app/"><img src="assets/images/icons/link-ext.svg" loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
-                        </div>
-                        <p class="mb-3 leading-relaxed">Avalia comentários como positivos ou negativos através de um modelo de Inteligência Artificial</p>
-                    </div>
-                </div>
-            </div>
-            <div class="p-4 w-30cents font-roboto">
-                <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60">
-
-                  <a href="https://github.com/rafanthx13/comments-rating-server">
-                  <img width="400" height="200" alt="Servidor do Avaliador de Coment." src="./assets/images/projects/comments-rating-server.webp" loading="lazy" class="object-cover object-center w-full lg:h-48 md:h-36">
-                  </a>
-
-                    <div class="p-6"><span class="flex flex-wrap mb-1 text-xs font-medium tracking-widest text-gray-400 "><span>
-                                Python &nbsp;
-                            </span><span>
-                                Flask &nbsp;
-                            </span><span>
-                                Pytorch &nbsp;
-                            </span><span>
-                                RNN-LSTM &nbsp;
-                            </span></span>
-                        <div class="flex flex-wrap">
-                            <h3 class="mb-3 text-lg font-medium text-gray-900 ">Server do Avaliador de Coment.</h3> <a href="https://github.com/rafanthx13/comments-rating-server"><img src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20" class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a href="https://rafanthx13.github.io/comments-rating-app/"><img src="assets/images/icons/link-ext.svg" loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
-                        </div>
-                        <p class="mb-3 leading-relaxed">Servidor Flask para prover o acesso ao modelo de Machine Learning para classificar comentários</p>
-                    </div>
-                </div>
-            </div>
             <div class="p-4 w-30cents font-roboto">
                 <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60">
 
@@ -626,7 +796,7 @@
                         <div class="flex flex-wrap">
                             <h3 class="mb-3 text-lg font-medium text-gray-900 ">Library API</h3> <a href="https://github.com/rafanthx13/library-api"><img src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20" class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a href="https://library-my-api.herokuapp.com/swagger-ui.html"><img src="assets/images/icons/link-ext.svg" loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
                         </div>
-                        <p class="mb-3 leading-relaxed">API REST em simples em Java para um sistema de biblioteca</p>
+                        <p class="mb-3 leading-relaxed">API REST eem Java para sistema de biblioteca</p>
                     </div>
                 </div>
             </div>
@@ -647,7 +817,7 @@
                         <div class="flex flex-wrap">
                             <h3 class="mb-3 text-lg font-medium text-gray-900 ">Movue It</h3> <a href="https://github.com/rafanthx13/movue-it-nuxt"><img src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20" class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a href="https://my-nuxt-movue-it.vercel.app/"><img src="assets/images/icons/link-ext.svg" loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
                         </div>
-                        <p class="mb-3 leading-relaxed">Aplicação de teste usando Nuxt e TypeScript</p>
+                        <p class="mb-3 leading-relaxed">Contador usando Nuxt e TypeScript</p>
                     </div>
                 </div>
             </div>
@@ -733,7 +903,7 @@
                       href="https://react-type-git-collection.netlify.app/"><img src="assets/images/icons/link-ext.svg"
                         loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
                   </div>
-                  <p class="mb-3 leading-relaxed">Aplicaçâo para consulta de repositórios Git</p>
+                  <p class="mb-3 leading-relaxed">Aplicação para consulta sobre repositórios Git</p>
                 </div>
               </div>
             </div>
@@ -764,55 +934,6 @@
               </div>
             </div>
 
-            <!-- NEW -->
-            <div class="p-4 w-30cents font-roboto">
-              <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60"><img width="400"
-                  height="200" alt="Projetos de Web Pages" src="./assets/images/projects/web-data-eng-project.png"
-                  loading="lazy" class="object-cover object-center w-full lg:h-48 md:h-36">
-                <div class="p-6"><span class="flex flex-wrap mb-1 text-xs font-medium tracking-widest text-gray-400 "><span>
-                      WebPage &nbsp;
-                    </span><span>
-                      Vue.JS &nbsp;
-                    </span><span>
-                      DataEngineering &nbsp;
-                    </span></span>
-                  <div class="flex flex-wrap">
-                    <h3 class="mb-3 text-lg font-medium text-gray-900 ">WebSite DataEng</h3> <a
-                      href="https://github.com/rafanthx13/data-eng-web-project"><img
-                        src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20"
-                        class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a
-                      href="https://data-eng-web-project.netlify.app/"><img src="assets/images/icons/link-ext.svg"
-                        loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
-                  </div>
-                  <p class="mb-3 leading-relaxed">Site com projetos sobre DataEngineering: Lista de livros, Recomendador de vídeos e análise de vagas</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="p-4 w-30cents font-roboto">
-              <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60"><img width="400"
-                  height="200" alt="Projetos de Web Pages" src="./assets/images/projects/data-eng-video-recomender.png"
-                  loading="lazy" class="object-cover object-center w-full lg:h-48 md:h-36">
-                <div class="p-6"><span class="flex flex-wrap mb-1 text-xs font-medium tracking-widest text-gray-400 "><span>
-                      WebPage &nbsp;
-                    </span><span>
-                      MachineLearning &nbsp;
-                    </span><span>
-                      WebScrap &nbsp;
-                    </span></span>
-                  <div class="flex flex-wrap">
-                    <h3 class="mb-3 text-lg font-medium text-gray-900 ">DataEng Video Recomender</h3> <a
-                      href="https://github.com/rafanthx13/data-eng-youtube-recomender"><img
-                        src="assets/images/icons/git-icon-black.svg" loading="lazy" alt="gitIcon" width="20" height="20"
-                        class="w-5 pt-1 mx-2 hover:opacity-20"></a> <a
-                      href="https://data-eng-web-project.netlify.app/video-recommender"><img src="assets/images/icons/link-ext.svg"
-                        loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
-                  </div>
-                  <p class="mb-3 leading-relaxed">Recomendador de vídeos sobre engenharia de dados</p>
-                </div>
-              </div>
-            </div>
-
             <div class="p-4 w-30cents font-roboto">
               <div class="h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60"><img width="400"
                   height="200" alt="Projetos de Web Pages" src="./assets/images/projects/url-shortner-front.png"
@@ -830,7 +951,7 @@
                       href="https://quasar-url-shortener.netlify.app/"><img src="assets/images/icons/link-ext.svg"
                         loading="lazy" alt="linkExtern" width="20" height="20" class="w-5 pt-1 hover:opacity-20"></a>
                   </div>
-                  <p class="mb-3 leading-relaxed">Encurtador de URL (falta configurar redirect do netlify)</p>
+                  <p class="mb-3 leading-relaxed">Encurtador de URL (em andamento)</p>
                 </div>
               </div>
             </div>
@@ -1048,16 +1169,15 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script> -->
 
   <!-- JQUERY -->
-  <!-- <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script> -->
   <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+  </script>
+
   <!-- MAIN JS -->
   <script src="./assets/js/main_3.js"></script>
+
   <!-- CSS MAIN COMPONENTS -->
   <!-- <link rel="stylesheet" href="assets/css/minify-components.css"> -->
 

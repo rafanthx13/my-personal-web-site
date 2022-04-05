@@ -1,9 +1,0 @@
-.en:before{background-image:url("https://www.countryflags.io/us/flat/32.png")}
-
-./assets/images/languages-icons/en.png
-
-#4069e1
-
-header .menu-btn span:before 
-
-width: 14px; height: 2px; background: #fefefe;

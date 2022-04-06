@@ -29,7 +29,7 @@ header .menu-btn span {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 14px;
+	width: 16px;
 	height: 2px;
 	background: #fefefe;
 	transition: all 0.3s ease 0s;
@@ -42,9 +42,9 @@ header .menu-btn span:before,
 header .menu-btn span:after {
 	content: '';
 	position: absolute;
-	top: -5px;
+	top: -7px;
 	left: 0;
-	width: 14px;
+	width: 16px;
 	height: 2px;
 	background: #fefefe;
 	transition: all 0.3s ease 0s;
@@ -55,7 +55,7 @@ header .menu-btn span:after {
 
 header .menu-btn span:after {
 	top: auto;
-	bottom: -5px;
+	bottom: -7px;
 }
 
 header .top-menu.active .menu-btn span {
@@ -92,6 +92,11 @@ header .top-menu {
 	-moz-transition: all 0.4s ease 0s;
 	-webkit-transition: all 0.4s ease 0s;
 	-o-transition: all 0.4s ease 0s;
+  transition: 0.3s;
+}
+
+.top-menu ul li:hover {
+  background-color: #495561;
 }
 
 @media (max-width: 720px) {
@@ -139,6 +144,7 @@ header .top-menu ul {
 header .top-menu ul li {
 	display: block;
 	line-height: 57px;
+  transition: 0.4s;
 }
 
 header .top-menu ul li a {
@@ -150,6 +156,7 @@ header .top-menu ul li a {
 	color: #fefefe;
 	font-size: 16px;
 	font-weight: 400;
+
 }
 
 header .top-menu ul li a:before {

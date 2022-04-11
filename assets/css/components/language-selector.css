@@ -85,8 +85,7 @@
 }
 
 .br:before {
-  background-image: url('../../assets/images/languages-icons/pt.png'); /*  url('../images/languages-icons/en.png'); */
-/* url(https://www.countryflags.io/br/flat/32.png);  */
+  background-image: url('../../assets/images/languages-icons/pt.png');
 }
 
 .en:before {

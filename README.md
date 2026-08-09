@@ -1,69 +1,29 @@
-# Meu Portifólio
+# Portfólio de Rafael Assis
 
-[https://rafaelmassis.com.br/](https://rafaelmassis.com.br/)
+Nova versão do site pessoal, construída com Next.js, TypeScript e exportação estática para o GitHub Pages.
 
-## Updates
+## Desenvolvimento
 
-06/04/2022
+```bash
+npm install
+npm run dev
+```
 
-+ Verificar o hover no menu e outros efeitos [x]
-+ Aumentar tamanho do ícone do menu [x]
-+ Adicionar img-hover em todos os projetos (só está em 2) [x]
-+ Remover fundo de imagens que deveriam ser trasnparentes [x]
+Abra `http://localhost:3000`.
 
-05/04/2022
+## Verificações
 
-+ Inserção do gulp e comandos npm para gerar CSS [x]
-+ Download de certificado
-+ Botões abaixo do Hero
-+ Seção de Status
-+ Hover em imagem para ir para outro link
-+ Adiçâo de imagem nas trajetórias (experiência/educação)
-+ Troca de imagem principal
+```bash
+npm run lint
+npm run build
+```
 
-LONG
+O build estático é criado em `out/`.
 
-+ Adicionar Fonte Personalizada
-+ Adicionar em outras línguas
-+ Adicionar outras rede sociais
+## Site anterior
 
-## Como fazer Deploy
+O código anterior está preservado em `legacy-site/` para consulta durante a migração. O arquivo `bkp-original.zip` é o backup fornecido antes do início da nova versão.
 
-Executar os 2 últimos scripts de package.json, e se atentar ao css importado
+## Publicação
 
-Hostinger > Hospedagem > Gerencair arquivos (Beta)
-
-Insira HTML; remova a pasta assets e coloque uma nova; antes de deletar tudo, faz um backup e deixe em old-versions
-
-Colocar como ZIP toda a psta exceto node_modules e outro zip se tiver
-
-### Mudar barra de menu
-
-comprimento horizoontal das 3 barras
-
-````css
-header .menu-btn span, header .menu-btn span:after, header .menu-btn span:before {
-    position: absolute;
-    width: 14px
-};
-````
-
-Barra supeior
-original: top: -5px; => -7px (aumenta dist entre barra 1 e 2)
-
-````css
-header .menu-btn span:after, header .menu-btn span:before {
-    content: "";
-    top: -5px;
-    left: 0;
-}
-````
-
-Barra inferiror
-
-`````css
-header .menu-btn span:after {
-    top: auto;
-    bottom: -7px;
-}
-````
+O workflow `.github/workflows/deploy-pages.yml` publica a pasta `out/` no GitHub Pages após um push para `main`. Nas configurações do repositório, a origem do GitHub Pages deve estar definida como **GitHub Actions**.

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Header } from "@/components/Header";
 import { SectionHeading } from "@/components/SectionHeading";
 import { education, experience, projects, skillGroups, socialLinks } from "@/data/portfolio";
+import { asset } from "@/lib/site";
 
 function ArrowIcon() {
   return (
@@ -87,7 +88,7 @@ export default function Home() {
               <div className="absolute -inset-4 rotate-3 rounded-[2rem] border border-teal-300/15" />
               <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900 p-3 shadow-2xl shadow-black/30">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-[1.45rem] bg-slate-800">
-                  <Image src="/images/rafael-assis.png" alt="Rafael Assis" fill priority sizes="(max-width: 1024px) 90vw, 420px" className="object-cover object-center" />
+                  <Image src={asset("/images/rafael-assis.png")} alt="Rafael Assis" fill priority sizes="(max-width: 1024px) 90vw, 420px" className="object-cover object-center" />
                   <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-7">
                     <p className="text-xs font-bold uppercase tracking-[0.18em] text-teal-300">Perfil profissional</p>
@@ -256,4 +257,3 @@ export default function Home() {
     </>
   );
 }
-

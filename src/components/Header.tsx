@@ -1,4 +1,5 @@
 import { navigation } from "@/data/portfolio";
+import { asset } from "@/lib/site";
 
 export function Header() {
   return (
@@ -22,7 +23,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <a
             className="hidden rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white transition hover:border-teal-300 hover:text-teal-300 sm:inline-flex"
-            href="/documents/curriculo-rafael-assis.pdf"
+            href={asset("/documents/curriculo-rafael-assis.pdf")}
             target="_blank"
             rel="noreferrer"
           >

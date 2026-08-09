@@ -1,3 +1,5 @@
+import { asset } from "@/lib/site";
+
 export const navigation = [
   { label: "Sobre", href: "#sobre" },
   { label: "Competências", href: "#competencias" },
@@ -39,7 +41,7 @@ export const education = [
     title: "Bacharelado em Ciência da Computação",
     organization: "Universidade Federal de Uberlândia — UFU",
     location: "Uberlândia, MG",
-    logo: "/images/logos/ufu.png",
+    logo: asset("/images/logos/ufu.png"),
     details: [
       "Monitoria em Programação Lógica",
       "Iniciação científica e TCC na área de dados",
@@ -51,7 +53,7 @@ export const education = [
     title: "Técnico em Informática integrado ao Ensino Médio",
     organization: "Instituto Federal da Bahia — IFBA",
     location: "Eunápolis, BA",
-    logo: "/images/logos/ifba.png",
+    logo: asset("/images/logos/ifba.png"),
     details: ["Primeiro contato com algoritmos, programação e fundamentos da computação"],
   },
 ];
@@ -62,7 +64,7 @@ export const experience = [
     title: "Analista de Sistemas Júnior",
     organization: "Sicoob Credicom",
     location: "Belo Horizonte, MG",
-    logo: "/images/logos/sicoob-credicom.png",
+    logo: asset("/images/logos/sicoob-credicom.png"),
     details: [
       "Desenvolvimento e manutenção de sistemas internos e externos",
       "Aplicações em PHP e Laravel com banco de dados MySQL",
@@ -74,7 +76,7 @@ export const experience = [
     title: "Estágio em Desenvolvimento de Software",
     organization: "Neppo",
     location: "Uberlândia, MG",
-    logo: "/images/logos/neppo.png",
+    logo: asset("/images/logos/neppo.png"),
     details: [
       "Desenvolvimento full-stack em produtos internos",
       "PHP, AngularJS, Java, Spring e Vue.js",
@@ -88,7 +90,7 @@ export const projects = [
     title: "Análise da área de dados no Brasil",
     category: "Análise de dados",
     description: "Estudo sobre salários, tecnologias e atividades dos principais cargos de dados no Brasil.",
-    image: "/images/projects/kaggle-state-of-data.png",
+    image: asset("/images/projects/kaggle-state-of-data.png"),
     tags: ["Python", "Kaggle", "Storytelling"],
     href: "https://www.kaggle.com/code/rafanthx13/analise-da-rea-de-dados-no-brasil/notebook",
   },
@@ -96,7 +98,7 @@ export const projects = [
     title: "Human Analytics",
     category: "Engenharia de dados",
     description: "Stack de dados e machine learning para analisar a possível saída de colaboradores.",
-    image: "/images/projects/human-analytics.png",
+    image: asset("/images/projects/human-analytics.png"),
     tags: ["Airflow", "Docker", "Machine Learning"],
     href: "https://github.com/rafanthx13/data-eng-project-human-analytics",
   },
@@ -104,7 +106,7 @@ export const projects = [
     title: "Portfólio de Data Science",
     category: "Data Science",
     description: "Coleção de estudos, experimentos, notebooks e soluções orientadas a dados.",
-    image: "/images/projects/ds-portifolio.webp",
+    image: asset("/images/projects/ds-portifolio.webp"),
     tags: ["Python", "Jupyter", "Machine Learning"],
     href: "https://github.com/rafanthx13/ds-portifolio",
   },
@@ -112,7 +114,7 @@ export const projects = [
     title: "Barkion",
     category: "Data Science",
     description: "Projeto de análise exploratória, visualização e aprendizado de máquina.",
-    image: "/images/projects/barkion.webp",
+    image: asset("/images/projects/barkion.webp"),
     tags: ["Python", "EDA", "DataViz"],
     href: "https://github.com/rafanthx13/barkion",
   },
@@ -120,7 +122,7 @@ export const projects = [
     title: "DataEng Video Recommender",
     category: "Engenharia de dados",
     description: "Aplicação e pipeline para coleta, processamento e recomendação de vídeos.",
-    image: "/images/projects/data-eng-video-recomender.png",
+    image: asset("/images/projects/data-eng-video-recomender.png"),
     tags: ["Python", "Pipeline", "Recomendação"],
     href: "https://github.com/rafanthx13/data-eng-youtube-recomender",
   },
@@ -128,7 +130,7 @@ export const projects = [
     title: "Git Collection",
     category: "Desenvolvimento web",
     description: "Aplicação web para pesquisar e consultar informações de repositórios GitHub.",
-    image: "/images/projects/git-collection.png",
+    image: asset("/images/projects/git-collection.png"),
     tags: ["React", "TypeScript", "API"],
     href: "https://github.com/rafanthx13/react-type-git-collection",
   },
@@ -140,4 +142,3 @@ export const socialLinks = [
   { label: "Kaggle", href: "https://www.kaggle.com/rafanthx13", handle: "@rafanthx13" },
   { label: "E-mail", href: "mailto:rafaassis15@gmail.com", handle: "rafaassis15@gmail.com" },
 ];
-

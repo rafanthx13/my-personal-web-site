@@ -28,7 +28,7 @@ export function Header({ homeHref = "#inicio", navigationPrefix = "" }: HeaderPr
         <div className="flex items-center gap-3">
           <a
             className="hidden rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white transition hover:border-teal-300 hover:text-teal-300 sm:inline-flex"
-            href={asset("/documents/curriculo-rafael-assis.pdf")}
+            href={asset("/documents/cv_rafael_morais_assis.pdf")}
             target="_blank"
             rel="noreferrer"
           >

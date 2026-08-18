@@ -69,9 +69,9 @@ function TimelineColumn({
       </div>
       <div className="relative space-y-5 before:absolute before:bottom-4 before:left-5 before:top-4 before:w-px before:bg-white/10">
         {items.map((item) => (
-          <article key={`${item.period}-${item.title}`} className="relative rounded-2xl border border-white/8 bg-white/[0.035] p-6 pl-16 transition hover:border-teal-300/30 hover:bg-white/[0.055]">
-            <div className="absolute left-3 top-6 grid size-10 place-items-center rounded-full border border-white/10 bg-slate-900">
-              <Image src={item.logo} alt="" width={26} height={26} className="max-h-6 w-auto object-contain" />
+          <article key={`${item.period}-${item.title}`} className="relative rounded-2xl border border-white/8 bg-white/[0.035] p-6 pl-20 transition hover:border-teal-300/30 hover:bg-white/[0.055]">
+            <div className="absolute left-1 top-6 grid size-14 place-items-center rounded-full border border-white/15 bg-slate-900">
+              <Image src={item.logo} alt="" width={36} height={36} className="max-h-9 w-auto object-contain" />
             </div>
             <p className="font-mono text-xs font-bold uppercase tracking-wider text-teal-300">{item.period}</p>
             <h4 className="mt-3 text-lg font-bold text-white">{item.title}</h4>

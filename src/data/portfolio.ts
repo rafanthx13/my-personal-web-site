@@ -4,6 +4,7 @@ export const navigation = [
   { label: "Sobre", href: "#sobre" },
   { label: "Competências", href: "#competencias" },
   { label: "Trajetória", href: "#trajetoria" },
+  { label: "Certificados", href: "#certificados" },
   { label: "Projetos", href: "#projetos" },
   { label: "Contato", href: "#contato" },
 ];
@@ -114,6 +115,16 @@ export const experience = [
       "PHP, AngularJS, Java, Spring e Vue.js",
       "ETL com Pentaho, MySQL, Git e metodologia Scrum",
     ],
+  },
+];
+
+export const certifications = [
+  {
+    title: "Microsoft Certified: Azure Fundamentals",
+    code: "AZ-900",
+    issuer: "Microsoft",
+    issuedAt: "27 de agosto de 2025",
+    issuedAtIso: "2025-08-27",
   },
 ];
 

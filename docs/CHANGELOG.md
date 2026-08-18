@@ -23,6 +23,7 @@
 ### Conteúdo
 
 - Reescrita a descrição da seção de competências para uma linguagem mais direta e pessoal.
+- Criada a seção de certificados com o registro da certificação Microsoft Azure Fundamentals (AZ-900), obtida em 27 de agosto de 2025.
 
 ### SEO e compartilhamento
 

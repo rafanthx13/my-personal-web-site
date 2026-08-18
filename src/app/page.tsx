@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Header } from "@/components/Header";
 import { SectionHeading } from "@/components/SectionHeading";
-import { education, experience, projects, skillGroups, socialLinks } from "@/data/portfolio";
+import { certifications, education, experience, projects, skillGroups, socialLinks } from "@/data/portfolio";
 import { asset } from "@/lib/site";
 
 function ArrowIcon() {
@@ -211,6 +211,34 @@ export default function Home() {
             <div className="mt-16 grid gap-14 lg:grid-cols-2 lg:gap-8">
               <TimelineColumn id="experiencia" label="Experiência profissional" items={experience} />
               <TimelineColumn id="educacao" label="Formação acadêmica" items={education} />
+            </div>
+          </div>
+        </section>
+
+        <section id="certificados" className="scroll-mt-20 border-b border-white/8 bg-slate-900/35 px-5 py-24 sm:px-8 sm:py-32">
+          <div className="mx-auto max-w-7xl">
+            <SectionHeading
+              eyebrow="Certificados"
+              title="Aprendizado com reconhecimento oficial."
+              description="Certificações que registram conhecimentos validados e fazem parte da minha trajetória profissional."
+            />
+            <div className="mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              {certifications.map((certification) => (
+                <article key={certification.code} className="relative overflow-hidden rounded-2xl border border-white/10 bg-slate-950 p-5 sm:p-6">
+                  <div className="pointer-events-none absolute -right-16 -top-20 size-36 rounded-full border-[22px] border-teal-300/10" />
+                  <div className="relative flex items-start justify-between gap-5">
+                    <div>
+                      <p className="font-mono text-xs font-bold uppercase tracking-[0.2em] text-teal-300">{certification.issuer}</p>
+                      <h3 className="mt-3 max-w-lg text-xl font-bold tracking-tight text-white">{certification.title}</h3>
+                    </div>
+                    <span className="shrink-0 rounded-full border border-teal-300/35 bg-teal-300/10 px-2.5 py-1 font-mono text-xs font-bold text-teal-200">{certification.code}</span>
+                  </div>
+                  <div className="relative mt-6 border-t border-white/8 pt-4">
+                    <p className="font-mono text-[0.65rem] font-bold uppercase tracking-widest text-slate-500">Obtido em</p>
+                    <time dateTime={certification.issuedAtIso} className="mt-2 block text-sm font-semibold text-slate-200">{certification.issuedAt}</time>
+                  </div>
+                </article>
+              ))}
             </div>
           </div>
         </section>

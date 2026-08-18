@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
 import { projects } from "@/data/portfolio";
 
+const siteUrl = "https://rafaelmassis.com.br";
+
 type ProjectPageProps = {
   params: Promise<{ slug: string }>;
 };
@@ -37,10 +39,21 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   return {
     title: project.title,
     description: project.description,
+    alternates: {
+      canonical: `/projetos/${project.slug}/`,
+    },
     openGraph: {
       title: project.title,
       description: project.description,
+      url: `/projetos/${project.slug}/`,
+      type: "article",
       images: [{ url: project.image, alt: project.imageAlt }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: project.title,
+      description: project.description,
+      images: [project.image],
     },
   };
 }
@@ -52,9 +65,26 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     notFound();
   }
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: project.title,
+    description: project.description,
+    url: `${siteUrl}/projetos/${project.slug}/`,
+    image: `${siteUrl}${project.image}`,
+    keywords: project.tags.join(", "),
+    author: {
+      "@type": "Person",
+      name: "Rafael Assis",
+      url: siteUrl,
+    },
+    sameAs: project.href,
+  };
+
   return (
     <>
       <Header homeHref="/" navigationPrefix="/" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <main className="overflow-hidden px-5 pb-24 pt-32 sm:px-8 sm:pb-32">
         <article className="mx-auto max-w-5xl">
           <Link href="/#projetos" className="inline-flex items-center gap-2 text-sm font-bold text-teal-300 transition hover:text-teal-200">

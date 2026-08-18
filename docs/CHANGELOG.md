@@ -23,3 +23,9 @@
 ### Conteúdo
 
 - Reescrita a descrição da seção de competências para uma linguagem mais direta e pessoal.
+
+### SEO e compartilhamento
+
+- Adicionados dados estruturados de perfil profissional e de cada projeto para facilitar a interpretação por buscadores.
+- Criada uma imagem de compartilhamento para a página inicial e metadados completos para Open Graph e Twitter.
+- Adicionados links canônicos e instruções de indexação para buscadores.

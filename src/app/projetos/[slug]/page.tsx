@@ -96,9 +96,16 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <p className="font-mono text-xs font-bold uppercase tracking-[0.22em] text-teal-300">{project.category}</p>
               <h1 className="mt-5 text-balance text-4xl font-black tracking-[-0.05em] text-white sm:text-6xl">{project.title}</h1>
               <p className="mt-6 text-lg leading-8 text-slate-400">{project.description}</p>
-              <a href={project.href} target="_blank" rel="noreferrer" className="mt-8 inline-flex items-center gap-2 rounded-full bg-teal-300 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-teal-200">
-                {project.externalLinkLabel} <ArrowIcon />
-              </a>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a href={project.href} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-teal-300 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-teal-200">
+                  {project.externalLinkLabel} <ArrowIcon />
+                </a>
+                {project.githubPage && (
+                  <a href={project.githubPage} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-bold text-white transition hover:border-teal-300 hover:text-teal-300">
+                    Ver no GitHub <ArrowIcon />
+                  </a>
+                )}
+              </div>
             </div>
             <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-slate-900">
               <Image src={project.image} alt={project.imageAlt} fill priority sizes="(max-width: 1024px) 100vw, 55vw" className="object-cover" />

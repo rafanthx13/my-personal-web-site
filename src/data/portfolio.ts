@@ -137,6 +137,7 @@ export type Project = {
   imageAlt: string;
   tags: string[];
   href: string;
+  githubPage?: string;
   externalLinkLabel: string;
   challenge: string;
   solution: string;
@@ -180,6 +181,7 @@ export const projects: Project[] = [
       "Menos tempo gasto pesquisando recursos em diferentes lugares.",
       "Conteúdo que pode ser ajustado às minhas necessidades.",
     ],
+    githubPage: "https://github.com/rafanthx13/dev-tool-box",
   },
   {
     slug: "daily-task-tracker-home",

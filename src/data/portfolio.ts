@@ -4,6 +4,7 @@ export const navigation = [
   { label: "Sobre", href: "#sobre" },
   { label: "Competências", href: "#competencias" },
   { label: "Trajetória", href: "#trajetoria" },
+  { label: "Certificados", href: "#certificados" },
   { label: "Projetos", href: "#projetos" },
   { label: "Contato", href: "#contato" },
 ];
@@ -13,25 +14,57 @@ export const skillGroups = [
     number: "01",
     title: "Front-end",
     description: "Interfaces web responsivas, acessíveis e orientadas à experiência do usuário.",
-    skills: ["HTML & CSS", "JavaScript", "TypeScript", "React", "Vue.js", "Next.js"],
+    skills: [
+      { name: "HTML & CSS", level: 4 },
+      { name: "JavaScript", level: 4 },
+      { name: "jQuery", level: 5, highlighted: true },
+      { name: "TypeScript", level: 3 },
+      { name: "React", level: 3 },
+      { name: "Vue.js", level: 3 },
+      { name: "Next.js", level: 3 },
+    ],
   },
   {
     number: "02",
     title: "Back-end",
     description: "APIs, integrações e aplicações que conectam regras de negócio a dados.",
-    skills: ["Node.js", "PHP", "Laravel", "Java", "Spring", "Python", "Django"],
+    skills: [
+      { name: "Node.js", level: 3 },
+      { name: "PHP", level: 5, highlighted: true },
+      { name: "Laravel", level: 5, highlighted: true },
+      { name: "Java", level: 3 },
+      { name: "Spring", level: 2 },
+      { name: "Python", level: 5, highlighted: true },
+      { name: "Django", level: 2 },
+    ],
   },
   {
     number: "03",
     title: "Dados",
     description: "Análise, engenharia e visualização para transformar dados em decisões.",
-    skills: ["Python", "SQL", "Power BI", "Airflow", "Spark", "Jupyter", "Pentaho PDI"],
+    skills: [
+      { name: "Python", level: 5, highlighted: true },
+      { name: "SQL", level: 5, highlighted: true },
+      { name: "Power BI", level: 3 },
+      { name: "Airflow", level: 2 },
+      { name: "Spark", level: 2 },
+      { name: "Jupyter", level: 3 },
+      { name: "Pentaho PDI", level: 2 },
+    ],
   },
   {
     number: "04",
     title: "Engenharia",
     description: "Ferramentas e práticas para desenvolver, colaborar e entregar com qualidade.",
-    skills: ["Git", "Docker", "MySQL", "APIs REST", "Scrum", "Deploy", "Linux"],
+    skills: [
+      { name: "Git", level: 4 },
+      { name: "Docker", level: 3 },
+      { name: "MySQL", level: 4 },
+      { name: "APIs REST", level: 4 },
+      { name: "Scrum", level: 3 },
+      { name: "Deploy", level: 3 },
+      { name: "Linux", level: 3 },
+    ],
   },
 ];
 
@@ -85,54 +118,90 @@ export const experience = [
   },
 ];
 
-export const projects = [
+export const certifications = [
   {
+    title: "Microsoft Certified: Azure Fundamentals",
+    code: "AZ-900",
+    issuer: "Microsoft",
+    issuedAt: "23 de agosto de 2025",
+    issuedAtIso: "2025-08-23",
+  },
+];
+
+export type Project = {
+  slug: string;
+  title: string;
+  category: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  imageTop?: boolean;
+  tags: string[];
+  href: string;
+  githubPage?: string;
+  externalLinkLabel: string;
+  challenge: string;
+  solution: string;
+  results: string[];
+  gallery?: { src: string; alt: string }[];
+};
+
+export const projects: Project[] = [
+  {
+    slug: "analise-dados-brasil",
     title: "Análise da área de dados no Brasil",
     category: "Análise de dados",
     description: "Estudo sobre salários, tecnologias e atividades dos principais cargos de dados no Brasil.",
     image: asset("/images/projects/kaggle-state-of-data.png"),
+    imageAlt: "Visualização do projeto Análise da área de dados no Brasil",
     tags: ["Python", "Kaggle", "Storytelling"],
     href: "https://www.kaggle.com/code/rafanthx13/analise-da-rea-de-dados-no-brasil/notebook",
+    externalLinkLabel: "Ver notebook no Kaggle",
+    challenge: "Entender o perfil da área de dados no Brasil, reunindo informações sobre cargos, salários, ferramentas e atividades mais frequentes.",
+    solution: "Foi feita uma análise exploratória dos dados, com Python, para organizar as informações e transformá-las em gráficos e comparações fáceis de interpretar.",
+    results: [
+      "Comparação de faixas salariais entre os principais cargos de dados.",
+      "Levantamento das tecnologias mais utilizadas por profissionais da área.",
+      "Visualizações que facilitam a leitura dos dados e a identificação de tendências.",
+    ],
   },
   {
-    title: "Human Analytics",
-    category: "Engenharia de dados",
-    description: "Stack de dados e machine learning para analisar a possível saída de colaboradores.",
-    image: asset("/images/projects/human-analytics.png"),
-    tags: ["Airflow", "Docker", "Machine Learning"],
-    href: "https://github.com/rafanthx13/data-eng-project-human-analytics",
+    slug: "dev-tool-box",
+    title: "Dev Tool Box",
+    category: "WebPage",
+    description: "Uma caixa de ferramentas e cheat sheets para apoiar tarefas recorrentes no dia a dia de desenvolvimento.",
+    image: asset("/images/projects/dev-tool-box.png"),
+    imageAlt: "Visualização do projeto Análise da área de dados no Brasil",
+    tags: ["WebPage", "HTML", "CSS", "VanillaJS"],
+    href: "https://www.kaggle.com/code/rafanthx13/analise-da-rea-de-dados-no-brasil/notebook",
+    externalLinkLabel: "Ver site",
+    challenge: "Reunir ferramentas úteis para a rotina de desenvolvimento em um único lugar, reduzindo o tempo gasto procurando recursos em diferentes sites.",
+    solution: "Foi criada uma página web estática, desenvolvida com HTML, CSS e JavaScript puro e publicada no GitHub Pages. Assim, as ferramentas ficam disponíveis de forma rápida, simples e sem dependência de banco de dados.",
+    results: [
+      "Acesso prático a ferramentas e referências úteis para o trabalho.",
+      "Menos tempo gasto pesquisando recursos em diferentes lugares.",
+      "Conteúdo que pode ser ajustado às minhas necessidades.",
+    ],
+    githubPage: "https://github.com/rafanthx13/dev-tool-box",
+    imageTop: true,
   },
   {
-    title: "Portfólio de Data Science",
-    category: "Data Science",
-    description: "Coleção de estudos, experimentos, notebooks e soluções orientadas a dados.",
-    image: asset("/images/projects/ds-portifolio.webp"),
-    tags: ["Python", "Jupyter", "Machine Learning"],
-    href: "https://github.com/rafanthx13/ds-portifolio",
-  },
-  {
-    title: "Barkion",
-    category: "Data Science",
-    description: "Projeto de análise exploratória, visualização e aprendizado de máquina.",
-    image: asset("/images/projects/barkion.webp"),
-    tags: ["Python", "EDA", "DataViz"],
-    href: "https://github.com/rafanthx13/barkion",
-  },
-  {
-    title: "DataEng Video Recommender",
-    category: "Engenharia de dados",
-    description: "Aplicação e pipeline para coleta, processamento e recomendação de vídeos.",
-    image: asset("/images/projects/data-eng-video-recomender.png"),
-    tags: ["Python", "Pipeline", "Recomendação"],
-    href: "https://github.com/rafanthx13/data-eng-youtube-recomender",
-  },
-  {
-    title: "Git Collection",
-    category: "Desenvolvimento web",
-    description: "Aplicação web para pesquisar e consultar informações de repositórios GitHub.",
-    image: asset("/images/projects/git-collection.png"),
-    tags: ["React", "TypeScript", "API"],
-    href: "https://github.com/rafanthx13/react-type-git-collection",
+    slug: "daily-task-tracker-home",
+    title: "Daily Task Tracker",
+    category: "Project",
+    description: "Ferramenta para gerenciamento de Kanban e atividades do dia.",
+    image: asset("/images/projects/daily-task-tracker-home.png"),
+    imageAlt: "Visualização do projeto daily-task-tracker-home",
+    tags: ["PHP", "Laravel", "SQLite"],
+    href: "https://www.kaggle.com/code/rafanthx13/analise-da-rea-de-dados-no-brasil/notebook",
+    externalLinkLabel: "Ver projeto",
+    challenge: "Organizar as tarefas, anotações e prioridades do trabalho em um só lugar, em vez de depender de registros dispersos ao longo do dia.",
+    solution: "Foi desenvolvida uma aplicação local com Laravel e SQLite, com uma interface focada na rotina diária. Ela reúne quadro Kanban, lembretes, gestão de tempo, anotações e acompanhamento de conquistas.",
+    results: [
+      "Organização de tarefas e manutenção de um histórico das atividades.",
+      "Visualização simples e local dos dados com SQLite.",
+    ],
+    imageTop: true,
   },
 ];
 

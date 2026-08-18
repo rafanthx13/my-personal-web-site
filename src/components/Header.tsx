@@ -1,11 +1,16 @@
 import { navigation } from "@/data/portfolio";
 import { asset } from "@/lib/site";
 
-export function Header() {
+type HeaderProps = {
+  homeHref?: string;
+  navigationPrefix?: string;
+};
+
+export function Header({ homeHref = "#inicio", navigationPrefix = "" }: HeaderProps) {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/8 bg-slate-950/80 backdrop-blur-xl">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 sm:px-8">
-        <a className="group flex items-center gap-3" href="#inicio" aria-label="Ir para o início">
+          <a className="group flex items-center gap-3" href={homeHref} aria-label="Ir para o início">
           <span className="grid size-9 place-items-center rounded-full bg-teal-300 text-sm font-black text-slate-950 transition-transform group-hover:rotate-6">
             RA
           </span>
@@ -14,7 +19,7 @@ export function Header() {
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Navegação principal">
           {navigation.map((item) => (
-            <a key={item.href} className="text-sm text-slate-300 transition-colors hover:text-teal-300" href={item.href}>
+            <a key={item.href} className="text-sm text-slate-300 transition-colors hover:text-teal-300" href={`${navigationPrefix}${item.href}`}>
               {item.label}
             </a>
           ))}
@@ -23,7 +28,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <a
             className="hidden rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white transition hover:border-teal-300 hover:text-teal-300 sm:inline-flex"
-            href={asset("/documents/curriculo-rafael-assis.pdf")}
+            href={asset("/documents/cv_rafael_morais_assis.pdf")}
             target="_blank"
             rel="noreferrer"
           >
@@ -38,7 +43,7 @@ export function Header() {
             <nav className="fixed inset-x-0 top-18 border-y border-white/8 bg-slate-950 px-5 py-5 shadow-2xl" aria-label="Navegação móvel">
               <div className="mx-auto flex max-w-7xl flex-col">
                 {navigation.map((item) => (
-                  <a key={item.href} className="border-b border-white/6 py-3 text-base text-slate-200 last:border-0" href={item.href}>
+                  <a key={item.href} className="border-b border-white/6 py-3 text-base text-slate-200 last:border-0" href={`${navigationPrefix}${item.href}`}>
                     {item.label}
                   </a>
                 ))}

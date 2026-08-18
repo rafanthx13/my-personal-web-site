@@ -267,7 +267,7 @@ export default function Home() {
                     className="group relative block aspect-[16/10] overflow-hidden bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-teal-300"
                     href={`/projetos/${project.slug}/`}
                   >
-                    <Image src={project.image} alt={project.imageAlt} fill sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw" className="object-cover transition duration-500 group-hover:scale-105" />
+                    <Image src={project.image} alt={project.imageAlt} fill sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw" className={`object-cover ${project.imageTop ? "object-top" : "object-center"} transition duration-500 group-hover:scale-105`} />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-950/65 to-transparent" />
                     <span className="absolute left-4 top-4 rounded-full border border-white/15 bg-slate-950/75 px-3 py-1 font-mono text-[0.65rem] font-bold uppercase tracking-wider text-white backdrop-blur">
                       {project.category}

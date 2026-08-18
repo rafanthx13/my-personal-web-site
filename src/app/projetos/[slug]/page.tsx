@@ -108,7 +108,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </div>
             <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-slate-900">
-              <Image src={project.image} alt={project.imageAlt} fill priority sizes="(max-width: 1024px) 100vw, 55vw" className="object-cover" />
+              <Image src={project.image} alt={project.imageAlt} fill priority sizes="(max-width: 1024px) 100vw, 55vw" className={`object-cover ${project.imageTop ? "object-top" : "object-center"}`} />
             </div>
           </div>
 

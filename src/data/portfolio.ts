@@ -135,6 +135,7 @@ export type Project = {
   description: string;
   image: string;
   imageAlt: string;
+  imageTop?: boolean;
   tags: string[];
   href: string;
   githubPage?: string;
@@ -182,6 +183,7 @@ export const projects: Project[] = [
       "Conteúdo que pode ser ajustado às minhas necessidades.",
     ],
     githubPage: "https://github.com/rafanthx13/dev-tool-box",
+    imageTop: true,
   },
   {
     slug: "daily-task-tracker-home",
@@ -199,6 +201,7 @@ export const projects: Project[] = [
       "Organização de tarefas e manutenção de um histórico das atividades.",
       "Visualização simples e local dos dados com SQLite.",
     ],
+    imageTop: true,
   },
 ];
 

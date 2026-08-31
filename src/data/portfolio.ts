@@ -137,9 +137,9 @@ export type Project = {
   imageAlt: string;
   imageTop?: boolean;
   tags: string[];
-  href: string;
+  href?: string;
   githubPage?: string;
-  externalLinkLabel: string;
+  externalLinkLabel?: string;
   challenge: string;
   solution: string;
   results: string[];
@@ -202,6 +202,24 @@ export const projects: Project[] = [
       "Visualização simples e local dos dados com SQLite.",
     ],
     imageTop: true,
+  },
+  {
+    slug: "dev-notes-garden",
+    title: "Dev Notes Garden",
+    category: "Base de conhecimento",
+    description: "Uma base de conhecimento em formato de site para reunir estudos sobre fundamentos e boas práticas de desenvolvimento de software.",
+    image: asset("/images/projects/dev-notes-garden.png"),
+    imageAlt: "Página do projeto Dev Notes Garden",
+    tags: ["Quartz", "Obsidian", "Markdown", "Documentação"],
+    href: "https://dev-notes.rafaelmassis.com.br/",
+    externalLinkLabel: "Acessar notas",
+    challenge: "Organizar anotações de estudo sobre programação em um espaço estruturado, navegável e fácil de consultar fora do Obsidian.",
+    solution: "O cofre do Obsidian foi transformado em um site estático com Quartz, preservando a organização das notas e tornando o conteúdo acessível pela web.",
+    results: [
+      "Centralização de estudos sobre design de software, arquitetura e leitura de livros técnicos.",
+      "Documentação de conceitos fundamentais que não dependem de uma linguagem de programação específica.",
+      "Navegação simples entre notas conectadas e temas de estudo.",
+    ],
   },
 ];
 

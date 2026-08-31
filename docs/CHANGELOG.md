@@ -15,7 +15,7 @@
 ### Projetos
 
 - Mantido somente o projeto **Análise da área de dados no Brasil**.
-- Adicionados os projetos **Dev Tool Box** e **Daily Task Tracker**.
+- Adicionados os projetos **Dev Tool Box**, **Daily Task Tracker** e **Dev Notes Garden**.
 - Alterado o card para que apenas a imagem e a seta sejam links para o projeto; o conteúdo textual deixou de ser clicável.
 - Reescrita a descrição da seção para uma apresentação mais natural.
 - Criada uma página de detalhes por projeto, com desafio, solução, tecnologias, resultados, imagens opcionais e link externo.
